@@ -17,7 +17,11 @@
 </script>
 
 <template>
-  <NConfigProvider :theme="darkTheme" :locale="enUS" :date-locale="dateEnUS">
+  <NConfigProvider
+    :theme="darkTheme"
+    :locale="enUS" 
+    :date-locale="dateEnUS"
+  >
     <NCard class="root-wrapper">
       <RouterView />
     </NCard>

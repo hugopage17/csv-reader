@@ -8,7 +8,7 @@
     setup() {
       const appStore = useAppStore();
       const { projectName } = toRefs(appStore);
-      return { projectName};
+      return { projectName };
     },
   })
 </script>
@@ -16,7 +16,7 @@
 <template>
   <NInput
     v-model="projectName"
-    placeholder="'Project Name'"
+    placeholder="Project Name"
   />
 </template>
 

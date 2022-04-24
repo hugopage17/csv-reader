@@ -1,16 +1,11 @@
-import { defineStore } from 'pinia'
+import { defineStore } from 'pinia';
+import { ref } from 'vue';
 
-export const useCounterStore = defineStore({
-  id: 'counter',
-  state: () => ({
-    counter: 0
-  }),
-  getters: {
-    doubleCount: (state) => state.counter * 2
-  },
-  actions: {
-    increment() {
-      this.counter++
-    }
-  }
-})
+const useAppStore = defineStore('app-store', () => {
+    const projectName = ref<string>('');
+    const hasData = ref<boolean>(false);
+    const fileData = ref<any>()
+    return { projectName, hasData, fileData };
+});
+
+export default useAppStore;
