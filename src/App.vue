@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
   import { defineComponent } from 'vue'
-  import { NConfigProvider, NCard, createTheme, inputDark, cardDark, enUS, dateEnUS } from 'naive-ui'
+  import { NConfigProvider, NCard, createTheme, inputDark, cardDark, enUS, dateEnUS, selectDark, iconDark, dataTableDark } from 'naive-ui'
 
   export default defineComponent({
     components: {
@@ -9,7 +9,7 @@
     },
     setup() {
       return {
-        darkTheme: createTheme([inputDark, cardDark]),
+        darkTheme: createTheme([inputDark, cardDark, selectDark, iconDark, dataTableDark]),
         enUS, dateEnUS,
       }
     }
@@ -29,8 +29,9 @@
 </template>
 
 <style>
-    .root-wrapper {
-        width: 100%;
-        height: 100vh;
-    }
+  .root-wrapper {
+    width: 100%;
+    height: 100vh;
+    padding: 0 !important;
+  }
 </style>

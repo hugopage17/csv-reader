@@ -10,5 +10,11 @@
     {
       "path": "./tsconfig.vitest.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "declaration": false,
+    "module": "es2020",
+  },
+  "lib": ["es2017", "dom"],
+  
 }
